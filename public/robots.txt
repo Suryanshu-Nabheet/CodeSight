@@ -1,0 +1,26 @@
+# public/robots.txt
+
+# Allow all search engine crawlers
+User-agent: *
+Allow: /
+Allow: /share/
+
+# Disallow API and internal routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Block AI scrapers from indexing
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
